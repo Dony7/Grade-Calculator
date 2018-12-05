@@ -100,7 +100,7 @@ $('.items').on('click', '.remove', function(){
         document.querySelector('.percentage-value').innerHTML = '-';
         document.querySelector('.grade-letter').innerHTML = '-';
     } else{
-        document.querySelector('.percentage-value').innerHTML = calc + '%';
+        document.querySelector('.percentage-value').innerHTML = calc.toFixed(1) + '%';
         document.querySelector('.grade-letter').innerHTML = currentGrade;
     }
     
